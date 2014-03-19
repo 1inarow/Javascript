@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Scrolling Demo</title>
+
+    <link rel="stylesheet" href="reset.css" type="text/css" charset="utf-8">
+
+    <style>
+        /* DO NOT CHANGE THESE */
+
+        #outer {
+            display: table;
+            position: absolute;
+            height: 150%;
+            width: 100%;
+        }
+
+        #middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #inner {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+        }
+
+        /* CHANGE THIS TO SUIT YOUR NEEDS */
+
+        #scroll {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            color:#333333;
+            background-color: #f2f2f2;
+        }
+
+    </style>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.0.6/jquery.mousewheel.min.js"></script>
+
+    <script>
+
+        var lastScrollTop = 0;
+
+        // Simple capture of the mouse scroll wheel
+        $( window ).scroll(function() {
+
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop){
+                // downscroll code
+            } else {
+                // upscroll code
+            }
+            lastScrollTop = st;
+            $("#scroll").html("Your scroll: " + lastScrollTop);
+
+            console.log("scrolling: " + lastScrollTop);
+
+        });
+
+        // Capture scroll
+        /*$( window ).on('mousewheel', function(event) {
+            console.log(event.deltaX, event.deltaY, event.deltaFactor);
+        });*/
+
+    </script>
+
+</head>
+<body>
+<div id="outer">
+    <div id="middle">
+        <div id="inner">
+            <div id="scroll">Please Scroll</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

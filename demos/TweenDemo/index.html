@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tween Demo</title>
+
+    <link rel="stylesheet" href="reset.css" type="text/css" charset="utf-8">
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <style>
+        /* DO NOT CHANGE THESE */
+
+        #outer {
+            display: table;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+
+        #middle {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        #inner {
+            margin-left: auto;
+            margin-right: auto;
+            width: 200px;
+        }
+
+        /* CHANGE THIS TO SUIT YOUR NEEDS */
+
+
+        #clickMe {
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            color: #333333;
+            position: relative;
+            background-color: #f2f2f2;
+        }
+
+    </style>
+
+    <script>
+
+        var isSelected = false;
+
+        function clicked() {
+            var clickMe = $("#inner");
+            if (isSelected) {
+                TweenLite.to(clickMe, .25, {rotation: 0, ease: Back.easeIn});
+                isSelected = false;
+            } else {
+                TweenLite.to(clickMe, .25, {rotation: 180, ease: Back.easeOut});
+                isSelected = true;
+            }
+        }
+
+    </script>
+
+</head>
+<body onload="init()">
+<div id="outer">
+    <div id="middle">
+        <div id="inner">
+            <div id="clickMe" onclick="clicked()">CLICK</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
