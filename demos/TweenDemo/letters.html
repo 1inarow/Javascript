@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Tween Demo</title>
+
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.11.5/TweenMax.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <style>
+        /* DO NOT CHANGE THESE */
+        html, body {
+            width:100%;
+            height:100%;
+        }
+        #outer {
+            display: table;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+
+        #middle {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
+        }
+
+        #inner {
+            margin: auto;
+            height: 60px;
+            width: 100px;
+            text-align: center;
+            background-color: #f2f2f2;
+            padding:10px;
+        }
+
+        /* CHANGE THIS TO SUIT YOUR NEEDS */
+
+        .pat {
+            float: left;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+    </style>
+
+    <script>
+
+        var isSelected = false;
+
+        function clicked() {
+
+            var letterP = $("#letterP");
+            var letterA = $("#letterA");
+            var letterT = $("#letterT");
+
+            if (isSelected) {
+                TweenLite.to(letterP, .25, {rotation: 0, delay:0, ease: Back.easeIn});
+                TweenLite.to(letterA, .25, {rotation: 0, delay:.25, ease: Back.easeIn});
+                TweenLite.to(letterT, .25, {rotation: 0, delay:.5, ease: Back.easeIn});
+                isSelected = false;
+            } else {
+                TweenLite.to(letterP, .25, {rotation: 180, delay:0, ease: Back.easeOut});
+                TweenLite.to(letterA, .25, {rotation: 180, delay:.25, ease: Back.easeOut});
+                TweenLite.to(letterT, .25, {rotation: 180, delay:.5, ease: Back.easeOut});
+                isSelected = true;
+            }
+
+        }
+
+    </script>
+
+</head>
+<body onload="init()">
+<div id="outer">
+    <div id="middle">
+        <div id="inner" onclick="clicked()">
+            <div class="pat" id="letterP">P</div>
+            <div class="pat" id="letterA">A</div>
+            <div class="pat" id="letterT">T</div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
