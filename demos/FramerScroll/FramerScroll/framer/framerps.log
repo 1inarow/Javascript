@@ -1,0 +1,13 @@
+{"docName":"FramerScroll","path":"~/Documents/github/Javascript/demos/FramerScroll/FramerScroll","relativeImagePath":"images","imagePath":"~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/images","framerPath":"~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/framer","viewInfoPath":"~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/framer/views.FramerScroll.js","logPaths":["/tmp/framerps.log","~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/framer/framerps.log"]}
+
+Running for ~/Documents/github/Javascript/demos/FramerScroll/FramerScroll
+all: Calculating vector mask bounds
+PROGRESS: 83.3333333333333
+PROGRESS: 100
+2 views changed
+Skipping ~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/index.html (exists)
+Skipping ~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/app.js (exists)
+Skipping ~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/framer/framer.js (exists)
+Skipping ~/Documents/github/Javascript/demos/FramerScroll/FramerScroll/framer/framerps.js (exists)
+
+SUCCESS: ~/Documents/github/Javascript/demos/FramerScroll/FramerScroll
