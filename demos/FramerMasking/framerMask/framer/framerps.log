@@ -1,0 +1,18 @@
+{"docName":"framerMask","path":"~/DSCloud/FramerTest/masking/framerMask","relativeImagePath":"images","imagePath":"~/DSCloud/FramerTest/masking/framerMask/images","framerPath":"~/DSCloud/FramerTest/masking/framerMask/framer","viewInfoPath":"~/DSCloud/FramerTest/masking/framerMask/framer/views.framerMask.js","logPaths":["/tmp/framerps.log","~/DSCloud/FramerTest/masking/framerMask/framer/framerps.log"]}
+
+Running for ~/DSCloud/FramerTest/masking/framerMask
+Could not read data file
+bg: Exporting image
+PROGRESS: 25
+text: Exporting image
+PROGRESS: 75
+black: Exporting image
+PROGRESS: 100
+PROGRESS: 100
+4 views changed
+Writing ~/DSCloud/FramerTest/masking/framerMask/index.html
+Writing ~/DSCloud/FramerTest/masking/framerMask/app.js
+Writing ~/DSCloud/FramerTest/masking/framerMask/framer/framer.js
+Writing ~/DSCloud/FramerTest/masking/framerMask/framer/framerps.js
+
+SUCCESS: ~/DSCloud/FramerTest/masking/framerMask
